@@ -1,0 +1,60 @@
+<html>
+ <head>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   @keyframes spinOut {
+            0% {
+                transform: rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: rotate(360deg);
+                opacity: 0;
+            }
+        }
+        .spin-out {
+            animation: spinOut 1s forwards;
+        }
+        .centered-video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 35%;
+            height: auto;
+            z-index: 10;
+        }
+  </style>
+ </head>
+ <body class="flex items-center justify-center min-h-screen bg-white">
+  <div class="text-center">
+   <img alt="lebron" class="mx-auto cursor-pointer" id="clickableImage" src="lebron.jpg"/>
+   <button id="clickButton" class="mt-4 px-6 py-2 bg-black text-white text-2xl font-bold rounded-full">
+    Click me fella
+   </button>
+  </div>
+  <video class="hidden" autoplay loop muted controls="" id="randomVideo">
+   <source src="lebronjames.mp4" type="video/mp4"/>
+   Your browser does not support the video tag.
+  </video>
+  <audio class="hidden" autoplay loop id="randomSound">
+   <source src="music.mp3" type="audio/mpeg"/>
+   Your browser does not support the audio element.
+  </audio>
+  <script>
+   document.getElementById('clickableImage').addEventListener('click', function() {
+            this.classList.add('spin-out');
+            document.getElementById('clickButton').style.display = 'none';
+            setTimeout(() => {
+                const video = document.getElementById('randomVideo');
+                video.classList.remove('hidden');
+                video.classList.add('centered-video');
+                video.play();
+                document.getElementById('randomSound').play();
+            }, 1000);
+        });
+  </script>
+ </body>
+</html>
