@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ernest | Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Welcome</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <video class="hero-bg-video" autoplay muted loop playsinline>
+      <source src="background.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h2>Hello, I'm <span class="highlight">Ernest</span></h2>
+      <p>I'm currently Exploring the world of <span id="typed-text" class="typed-text"></span></p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate and driven individual with a strong foundation in science and technology. A proud STEM graduate, I am currently pursuing a Bachelor of Science in Information Technology (BSIT) at Golden West Colleges in Alaminos City, Pangasinan. 
+      My interests lie deeply in the world of programming and software development. I enjoy coding in a variety of languages including HTML, CSS, JavaScript, Java, C, and PAWN (PAWNO). Continuously seeking to broaden my knowledge and capabilities, I actively explore new technologies and frameworks to stay ahead in this rapidly evolving field.
+      I am currently focused on sharpening my skills through consistent practice and hands-on projects. Whether it's front-end design, back-end logic, or game modding scripts, I enjoy the challenge of problem-solving and creating functional, efficient, and elegant code.
+      Motivated by growth and innovation, I am committed to becoming a well-rounded IT professional ready to take on real-world challenges.
+</p>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <div class="project-image-container">
+          <button class="prev-btn" aria-label="Previous image">&#8592;</button>
+          <img src="jollibeng1.jpg" alt="JolliBeng Screenshot" class="project-image" />
+          <button class="next-btn" aria-label="Next image">&#8594;</button>
+        </div>
+        <h3>JolliBeng - Restaurant Webpage (NOT FINISHED)</h3>
+        <p>I created a WEBSITE for a Business named JolliBeng, A joke Prototype of Jollibee offering a smooth UI, Menu, Embedded Map, And Review Panel</p>
+      </div>
+      <div class="project-card">
+        <div class="project-image-container">
+          <button class="prev-btn" aria-label="Previous image">&#8592;</button>
+          <img src="sigbin1.jpg" alt="Run The Sigbin Screenshot" class="project-image" />
+          <button class="next-btn" aria-label="Next image">&#8594;</button>
+        </div>
+        <h3>Run The Sigbin (NOT FINISH)</h3>
+        <p>A game inspired by the Dinosaur game on Browser. Offering an enjoyable and user interactive UI</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xrbknyoz" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ErnestDesigns. MAde with  Heart. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>   
+  </script>
+</body>
+</html>
