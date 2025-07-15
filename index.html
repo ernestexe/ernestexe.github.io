@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ernest | Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <video class="hero-bg-video" autoplay muted loop playsinline>
+      <source src="background.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    
+    <div class="hero-content">
+      <div class="social-links reveal">
+  <a href="https://web.facebook.com/ernest.caritativo.garcia?viewas=100000686899395" class="social-icon fb" target="_blank" aria-label="Facebook">
+    <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><path d="M29 16C29 8.8203 23.1797 3 16 3C8.8203 3 3 8.8203 3 16C3 22.2891 7.85156 27.4102 14 28.8125V20H11V16H14V13.5C14 10.7383 15.792 9.125 18.2656 9.125C19.4531 9.125 20.6875 9.32812 20.6875 9.32812V12H19.3125C17.9609 12 17.5 12.8203 17.5 13.6719V16H20.5625L20.0625 20H17.5V28.8125C23.6484 27.4102 28.5 22.2891 28.5 16H29Z" fill="#1877F3"/><path d="M20.0625 20L20.5625 16H17.5V13.6719C17.5 12.8203 17.9609 12 19.3125 12H20.6875V9.32812C20.6875 9.32812 19.4531 9.125 18.2656 9.125C15.792 9.125 14 10.7383 14 13.5V16H11V20H14V28.8125C14.6611 28.9375 15.3264 29 16 29C16.6736 29 17.3389 28.9375 18 28.8125V20H20.0625Z" fill="#fff"/></svg>
+  </a>
+  <a href="https://www.instagram.com/___ernotfound/" class="social-icon ig" target="_blank" aria-label="Instagram">
+    <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><rect x="7" y="7" width="18" height="18" rx="5" fill="url(#ig-gradient)"/><circle cx="16" cy="16" r="5" fill="#fff"/><circle cx="22.5" cy="9.5" r="1.5" fill="#fff"/><defs><linearGradient id="ig-gradient" x1="7" y1="7" x2="25" y2="25" gradientUnits="userSpaceOnUse"><stop stop-color="#f58529"/><stop offset="0.5" stop-color="#dd2a7b"/><stop offset="1" stop-color="#515bd4"/></linearGradient></defs></svg>
+  </a>
+</div>
+      <h2>
+  Hello, I'm 
+  <span class="highlight">
+    Ernest
+    <img src="JS.jpg" alt="Ernest" class="highlight-image-hover" />
+  </span>
+</h2>
+      <p>I'm Exploring the world of <span id="typed-text" class="typed-text"></span></p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <section class="about reveal" id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate and driven individual with a strong foundation in science and technology. 
+      A proud <span class="about-highlight">STEM graduate</span>, I am currently pursuing a <span class="about-highlight">Bachelor of Science in Information Technology (BSIT)</span> at <span class="about-highlight">Golden West Colleges</span> in <span class="about-highlight">Alaminos City, Pangasinan</span>.<br>
+      My interests lie deeply in the world of programming and software development. I enjoy coding in a variety of languages including <span class="about-highlight">HTML, CSS, JavaScript, Java, C, and PAWN (PAWNO)</span>. Continuously seeking to broaden my knowledge and capabilities, I actively explore new technologies and frameworks to stay ahead in this rapidly evolving field.<br>
+      I am currently focused on sharpening my skills through consistent practice and hands-on projects. Whether it's front-end design, back-end logic, or game modding scripts, I enjoy the challenge of problem-solving and creating functional, efficient, and elegant code.<br>
+      Motivated by growth and innovation, I am committed to becoming a well-rounded IT professional ready to take on real-world challenges.
+    </p>
+  </section>
+
+  <section class="projects reveal-stagger" id="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <div class="project-image-container">
+          <button class="prev-btn" aria-label="Previous image">&#8592;</button>
+          <img src="JolliBeng1.png" alt="JolliBeng Screenshot" class="project-image" />
+          <button class="next-btn" aria-label="Next image">&#8594;</button>
+        </div>
+        <h3>JolliBeng - Restaurant Webpage (NOT FINISHED)</h3>
+        <p>I created a WEBSITE for a Business named JolliBeng, A joke Prototype of Jollibee offering a smooth UI, Menu, Embedded Map, And Review Panel</p>
+      </div>
+      <div class="project-card">
+        <div class="project-image-container">
+          <button class="prev-btn" aria-label="Previous image">&#8592;</button>
+          <img src="RTS1.png" alt="Run The Sigbin Screenshot" class="project-image" />
+          <button class="next-btn" aria-label="Next image">&#8594;</button>
+        </div>
+        <h3>Run The Sigbin (NOT FINISH)</h3>
+        <p>A game inspired by the Dinosaur game on Browser. Offering an enjoyable and user interactive UI</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xrbknyoz" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025. Made with  Heart. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>   
+  </script>
+</body>
+</html>
