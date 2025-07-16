@@ -83,7 +83,7 @@ document.querySelector('form').addEventListener('submit', function(e) {
     ],
     [
       "RTS2.png",
-      "RTS1.PNG"
+      "RTS1.png"
     ]
   ];
 
